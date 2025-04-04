@@ -35,7 +35,8 @@
             android:layout_below="@+id/btnVerify"
             android:layout_marginTop="30dp"
             android:layout_centerHorizontal="true"
-            android:text="Writer Register" />
+            android:text="Writer Register"
+            android:visibility="invisible"/>
 
         <Button
             android:id="@+id/btnWriterVerify"
@@ -44,7 +45,8 @@
             android:layout_below="@+id/btnWriterRegister"
             android:layout_marginTop="30dp"
             android:layout_centerHorizontal="true"
-            android:text="Writer Verify" />
+            android:text="Writer Verify"
+            android:visibility="invisible"/>
 
         <TextView
             android:id="@+id/txtState"

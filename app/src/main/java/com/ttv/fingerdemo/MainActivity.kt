@@ -51,19 +51,19 @@ class MainActivity : AppCompatActivity() {
             startActivityForResult(intent, 2)
         }
 
-        val btnWriterRegister = findViewById<Button>(R.id.btnWriterRegister)
-        btnWriterRegister.setOnClickListener {
-            val intent = Intent(this, FingerCaptureActivity::class.java)
-            intent.putExtra("mode", 2);
-            startActivityForResult(intent, 1)
-        }
-
-        val btnWriterVerify = findViewById<Button>(R.id.btnWriterVerify)
-        btnWriterVerify.setOnClickListener {
-            val intent = Intent(this, FingerCaptureActivity::class.java)
-            intent.putExtra("mode", 3);
-            startActivityForResult(intent, 2)
-        }
+//        val btnWriterRegister = findViewById<Button>(R.id.btnWriterRegister)
+//        btnWriterRegister.setOnClickListener {
+//            val intent = Intent(this, FingerCaptureActivity::class.java)
+//            intent.putExtra("mode", 2);
+//            startActivityForResult(intent, 1)
+//        }
+//
+//        val btnWriterVerify = findViewById<Button>(R.id.btnWriterVerify)
+//        btnWriterVerify.setOnClickListener {
+//            val intent = Intent(this, FingerCaptureActivity::class.java)
+//            intent.putExtra("mode", 3);
+//            startActivityForResult(intent, 2)
+//        }
 
         hasPermission = permissionsDelegate.hasPermissions()
         if (!hasPermission) {

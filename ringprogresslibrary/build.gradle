@@ -2,13 +2,10 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.1"
 
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 24
-        versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -19,6 +16,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    namespace 'com.ldoublem.ringPregressLibrary'
 }
 
 dependencies {
